@@ -88,14 +88,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 5em;
+    padding-right: 2em;
     margin: 0;
 }
 
 
 .nav-item {
     list-style: none;
-    padding: 0.5em;
+    padding: 0.5em 1.5em;
 }
 
 .nav-link {
@@ -197,6 +197,10 @@ body {
     left: 47%;
 }
 
+#contact {
+    padding: 1.5em 0;
+}
+
 .contact-container {
     background-color: rgb(212, 244, 255);
     text-align: center;
@@ -208,5 +212,111 @@ body {
     display: flex;
     align-content: center;
     justify-content: center;
+    text-align: center;
     padding: 2em 0;
+    padding-bottom: 25em;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .header-content {
+        width: 95%;
+    }
+
+    .navbar {
+        padding: 0;
+        flex-direction: column;
+        background-color: #000;
+        position: fixed;
+        z-index: 5;
+        /* align-items: flex-start; */
+        /* padding: 0.2em; */
+    }
+
+    .nav-list {
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        top: 70px;
+        right: -500px;
+        overflow-x: hidden;
+        padding: 1em;
+        background-color: black;
+        transition: 0.2s ease-in-out;
+        z-index: 5;
+    }
+
+    .nav-link {
+        color: #fff;
+    }
+
+    .nav-link:hover::after {
+        color: #fff;
+    }
+
+    .nav-link:hover {
+        color: #fff;
+    }
+
+    .menu-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0.5em 1.5em;
+    }
+
+    .menu-icon {
+        padding: 1em 0;
+    }
+
+    .menu-icon span {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        display: block;
+        transition: 0.2s ease-in-out;
+    }
+
+    .menu-icon span:nth-child(2) {
+        margin: 5px 0;
+    }
+
+    .menuClass {
+        right: 0;
+        transition: 0.2s ease-in-out;
+    }
+
+    .menuIconClass {
+        /* margin-top: 1.5em; */
+        padding-top: 1.5em;
+    }
+
+    .menuIconClass span:nth-child(2) {
+        display: none;
+    }
+
+    .menuIconClass span:nth-child(1) {
+        transform: rotate(40deg);
+        transition: 0.2s ease-in-out;
+    }
+
+    .menuIconClass span:nth-child(3) {
+        transform: rotate(-40deg);
+        transition: 0.2s ease-in-out;
+        margin-top: -3px;
+    }
+
+    .collage-text {
+        top: 10%;
+        left: 10%;
+        font-size: 2em;
+    }
+
+    .btn-gallery {
+        left: 40%;
+        font-size: 1rem;
+        padding: 0.5em;
+
+    }
 }

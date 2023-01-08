@@ -18,14 +18,21 @@
             <source src="./videos/bg.mp4" type="video/mp4">
         </video>
         <nav class="navbar">
-            <div id="logo">
-                <a href=""><img src="./images/logo.png" alt="logo"></a>
+            <div class="menu-container">
+                <div id="logo">
+                    <a href=""><img src="./images/logo.png" alt="logo"></a>
+                </div>
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
             <ul class="nav-list">
                 <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="/gallery">Gallery</a></li>
-                <li class="nav-item"><a class="nav-link" href="/videos">Videos</a></li>
-                <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Videos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="header-content">
@@ -33,7 +40,7 @@
             <p>Indian transport tour a dedicated platform for transport sector of India includes
                 information about
                 BUS | TRUCK | CAR | BIKE |TRACTOR | CONSTRUCTION EQUIPMENTS</p>
-            <button class="btn btn-outline-primary">Explore More</button>
+            <a href="#gallery" class="btn btn-primary rounded-0">Explore More</a>
         </div>
     </header>
     <main id="main">
@@ -125,11 +132,11 @@
                 <div class="collage">
                     <img src="./images/collage.png" alt="collage">
                     <h4 class="collage-text">Explore Gallery of ITT</h4>
-                    <button class="btn btn-primary btn-gallery">Gallery</button>
+                    <button class="btn btn-primary rounded-0 btn-gallery">Gallery</button>
                 </div>
             </div>
         </section>
-        <section id="contact my-5">
+        <section id="contact">
             <h2 class="text-center">Contact Us</h2>
             <div class="container">
                 <div class="card contact-container border shadow">
@@ -157,6 +164,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
